@@ -1,0 +1,31 @@
+//Ingresar 10 valores numéricos a un array y mostrar cuantos son pares y cuantos son impares.
+//Funcion para ingresar los datos
+Algoritmo E2_NumPar_Impar
+	Definir  i, tamanho, ContPar, ContImpar Como Entero
+	ContImpar = 0
+	ContPar = 0
+	
+	Escribir "Digite el tamaño del arreglo: "
+	Leer tamanho
+	
+	Dimension arreglo[tamanho]
+	
+	Para i <- 0 Hasta tamanho-1  Hacer
+		Escribir "Ingrese el " i  " elemento" 
+		Leer arreglo[i]
+	Fin Para
+	
+	Para i <- 0 Hasta tamanho-1  Hacer
+		Escribir arreglo[i]
+		si arreglo[i] mod 2  = 0 Entonces
+			ContPar = ContPar + 1
+		SiNo
+			ContImpar= ContImpar+1
+		FinSi
+	Fin Para
+	
+	
+	Escribir "El total de números pares es: " , ContPar
+	Escribir  "El total de números impares es: " , ContImpar
+	
+FinAlgoritmo
